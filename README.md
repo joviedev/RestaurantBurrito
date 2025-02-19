@@ -1,9 +1,29 @@
-# Restaurant Burrito Booking System
-IDE used: Eclipse#Java version: Java SE 17
-JavaFX version: JavaFx 17
-Directions: RestaurantGUI.java is the main program, put all code into eclipse using Java SE 17 or later, the run the program.
-Unit test program: test/UnitTest.java
-OO design: 
-(1) Use Singleton pattern in model/Restaurant.java to create instance of Restaurant by this method public static Restaurant getInstance().
-all data are saved in class Restaurant, gui class like ExportOrdersView and ShoppingBasketView are used as view of these data.
-(2) Food is defined as an abstract class, Meal, Fries, Soda, Burrito are defined as subclasses of Food. 
+🍽️ Burrito King Restaurant Management System
+A Java-based restaurant ordering system designed for Burrito King, allowing customers to place orders, manage their profiles, and access VIP benefits. Developed using JavaFX, the system integrates object-oriented design principles, MVC architecture, and JDBC for persistent data storage.
+
+✨ Features:
+🔹 User Management
+User registration with unique usernames and passwords
+Login system with profile editing options
+VIP membership upgrade with email-based promotions
+🔹 Ordering System
+Add, update, and remove items (burritos, fries, soda) from the shopping basket
+Checkout system with validation for fake credit card transactions
+Order tracking: Displays order status (awaiting collection, collected, or canceled)
+Order history: View and manage past orders
+Dynamic waiting time calculation before order collection
+🔹 Advanced Functionalities for VIP Users
+Discounted meal bundles (burrito, fries, and soda) with $3 off
+Credit-based reward system: 1 credit per dollar spent, redeemable at checkout
+Export orders to CSV with customizable fields
+⏳ Waiting Time Logic
+Each order has a preparation time based on the number of items ordered.
+The estimated waiting time is displayed before placing an order.
+Users cannot collect an order before the calculated minimum collection time, ensuring food is prepared before pickup.
+The waiting time is dynamically updated based on the restaurant's processing speed.
+🏗️ Tech Stack & Design Principles
+Java SE 17+ (Core logic & GUI with JavaFX)
+MVC Architecture for clean separation of concerns
+JDBC for data persistence
+JUnit for unit testing
+Singleton & Interface-based design to enhance maintainability
