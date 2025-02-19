@@ -1,6 +1,5 @@
 # Restaurant Burrito Booking System
-IDE used: Eclipse
-Java version: Java SE 17
+IDE used: Eclipse#Java version: Java SE 17
 JavaFX version: JavaFx 17
 Directions: RestaurantGUI.java is the main program, put all code into eclipse using Java SE 17 or later, the run the program.
 Unit test program: test/UnitTest.java
